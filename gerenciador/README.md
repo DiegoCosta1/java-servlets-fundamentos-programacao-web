@@ -12,7 +12,7 @@
 - Entender o que é inversão de controle
 
 ## Lições aprendidas
-#### Aula 1: 
+#### Fundamentos da Web e a API de Servlets (Aula 1):
 - Apache Tomcat ou apenas Tomcat é um servidor web em Java
 - Tomcat entende o protocolo HTTP e roda por padrão no `http://localhost:8080`
 - O projeto Java faz parte da URL, no nosso caso: `http://localhost:8080/gerenciador`
