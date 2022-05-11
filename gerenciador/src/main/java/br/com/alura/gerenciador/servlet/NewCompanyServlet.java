@@ -20,7 +20,7 @@ public class NewCompanyServlet extends HttpServlet {
         super();
     }
 
-	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String nomeEmpresa = req.getParameter("nome");
 		
 		PrintWriter out = resp.getWriter();
