@@ -5,6 +5,9 @@
 <% 
 	String nomeEmpresa = "Alura";
 	System.out.println(nomeEmpresa);
+	
+	String name = (String) request.getAttribute("name");
+	System.out.println(name);
 %>
 <html>
 <head>
@@ -12,7 +15,7 @@
 <title>Empresa criada com sucesso</title>
 </head>
 <body>
-<!--A empresa <--% out.println(nomeEmpresa); %> foi cadastrada com sucesso.</p-->
-<p>A empresa <%= nomeEmpresa %> foi cadastrada com sucesso.</p>
+<p>A empresa <% out.println(nomeEmpresa); %> foi cadastrada com sucesso.</p>
+<p>A empresa <%= name %> foi cadastrada com sucesso.</p>
 </body>
 </html>
