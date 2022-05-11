@@ -3,6 +3,7 @@ package br.com.alura.gerenciador.servlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,8 +35,11 @@ public class NewCompanyServlet extends HttpServlet {
 		
 		PrintWriter out = resp.getWriter();
 		
-		out.println("Cadastrando nova empresa: " + companyName + ".");
+		// out.println("Cadastrando nova empresa: " + companyName + ".");
 		
+		// Chama o JSP
+		RequestDispatcher rd= req.getRequestDispatcher("/newCompany.jsp");
+		rd.forward(req, resp);
 	}
 
 }
