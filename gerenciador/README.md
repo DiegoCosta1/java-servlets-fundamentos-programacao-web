@@ -29,8 +29,15 @@
 - Diferença entre GET e POST
 - Para saber mais: [Fundamentos do HTTP](https://cursos.alura.com.br/course/http-fundamentos)
 
+#### Definindo o nosso modelo (Aula 3):
+- Criação do **modelo** da nossa aplicação.
+  > O modelo ou domínio são as classes que representam o mundo real, aquilo que o cliente ou usuário da aplicação define.<br>
+  > Para descobrir quais são as classes e funcionalidades do modelo o analista de requisitos conversa com o cliente e documenta cada funcionalidade.<br>
+  > Nesse curso falaremos menos sobre o modelo e a camada de persistência como JDBC ou JPA. Nós vamos focar nas Servlets, claro!
+
 ## Dicas do Eclipse
 - Criação do projeto web pelo menu "File" ou "Project Explorer":
 _`New > Project... > Dynamic Web Project`_
 - Exemplo como criar um arquivo Java pelo menu do diretório "src/main/java"/"src/main/webapp":
 _`New > Other > Servlet`_ ou _`New > Other > HTML File`_
+- Gerador de Getters e Setters através do atalho _`ctrl + 3`_
