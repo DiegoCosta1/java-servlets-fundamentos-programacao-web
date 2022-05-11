@@ -35,6 +35,16 @@
   > Para descobrir quais são as classes e funcionalidades do modelo o analista de requisitos conversa com o cliente e documenta cada funcionalidade.<br>
   > Nesse curso falaremos menos sobre o modelo e a camada de persistência como JDBC ou JPA. Nós vamos focar nas Servlets, claro!
 
+#### Páginas dinâmicas com JSP (Aula 4):
+- JSP significa Java Server Pages
+- JSP é uma página automaticamente processada pelo Tomcat
+- Para gerar HTML dinamicamente no JSP usamos Scriptlets
+- Um scriptlet `<% %>` é um código Java dentro do HTML
+- Um scriptlet só funciona em uma página JSP
+- Usamos o `RequestDispatcher` para chamar um JSP a partir da servlet
+- Obtemos o `RequestDispatcher` a partir do `HttpServletRequest`
+- Usamos a requisição para colocar ou pegar um atributo (`setAttribute(name, value)` ou `getAttribute(name)`)
+
 ## Dicas do Eclipse
 - Criação do projeto web pelo menu "File" ou "Project Explorer":
 _`New > Project... > Dynamic Web Project`_
