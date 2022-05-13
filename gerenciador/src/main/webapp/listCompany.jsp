@@ -11,6 +11,7 @@
 <body>
 	<h1>Empresas</h1>
 	
+	<!-- Utilizando apenas JSP -->
 	<ul>
 		<%
 			List<Company> companies = (List<Company>) request.getAttribute("companies"); 
@@ -22,6 +23,7 @@
 		%>
 	</ul>
 	
+	<!-- Utilizando JSTL -->
 	<ul>
 		<c:forEach items="${companies}" var="company">
 			<!-- <li>${company.getName()}</li> -->
