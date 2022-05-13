@@ -18,10 +18,10 @@
 <body>
 
 <!-- Utilizando apenas JSP -->
-<p>A empresa <% out.println(nomeEmpresa); %> foi cadastrada com sucesso.</p>
+<p>A empresa <% out.println(nomeEmpresa); %> já é cadastrada.</p>
 <p>A empresa <%= name %> foi cadastrada com sucesso.</p>
 
 <!-- Utilizando EL -->
-<p>A empresa ${company} foi cadastradas com sucesso.</p>
+<p>A empresa ${company} foi cadastrada com sucesso.</p>
 </body>
 </html>
