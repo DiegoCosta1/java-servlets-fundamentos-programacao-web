@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 
 <!-- Utilizando apenas JSP -->
@@ -22,6 +23,12 @@
 <p>A empresa <%= name %> foi cadastrada com sucesso.</p>
 
 <!-- Utilizando EL -->
-<p>A empresa ${company} foi cadastrada com sucesso.</p>
+<c:if test="${not empty company}">
+	<p>A empresa ${company} foi cadastrada com sucesso.</p>
+</c:if>
+
+<c:if test="${empty company}">
+	<p>Nenhuma empresa foi cadastrada.</p>
+</c:if>
 </body>
 </html>
