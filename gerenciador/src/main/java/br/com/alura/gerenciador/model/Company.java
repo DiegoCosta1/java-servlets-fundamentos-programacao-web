@@ -1,9 +1,13 @@
 package br.com.alura.gerenciador.model;
 
+import java.util.Date;
+
 public class Company {
 	private Integer id;
 	
 	private String name;
+	
+	private Date date = new Date();
 
 	public Integer getId() {
 		return id;
@@ -20,5 +24,13 @@ public class Company {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
 }

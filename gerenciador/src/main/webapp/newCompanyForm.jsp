@@ -10,8 +10,12 @@
 <title>Formulário de empresas</title>
 </head>
 <body>
+<style>
+	input { margin-bottom: 10px; }
+</style>
 	<form action="${newCompanyUrl}" method="POST">
-		Nome: <input type="text" name="name"/>
+		Nome: <input type="text" name="name"/><br/>
+		Data: <input type="text" name="data"/><br/>
 		<input type="submit"/>
 	</form>
 	<small style="color:blue"><c:url value="/newCompany"/></small><br/>

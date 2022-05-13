@@ -2,6 +2,7 @@
     pageEncoding="utf-8"%>
 <%@ page import="br.com.alura.gerenciador.model.Company, java.util.List" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,7 +28,9 @@
 	<ul>
 		<c:forEach items="${companies}" var="company">
 			<!-- <li>${company.getName()}</li> -->
-			<li>${company.name}</li> <!-- implicitamente, chama o método getName() -->
+			
+			<!-- implicitamente, chama os métodos getName() e get Date() -->
+			<li><fmt:formatDate value="${company.date}" pattern="dd/MM/yyyy"/> - ${company.name}</li> 
 		</c:forEach>
 	</ul>
 </body>
