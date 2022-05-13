@@ -39,7 +39,9 @@ public class NewCompanyServlet extends HttpServlet {
 		
 		// Chama o JSP
 		RequestDispatcher rd= req.getRequestDispatcher("/newCompany.jsp");
+		req.setAttribute("nomeEmpresa", company.getName());
 		req.setAttribute("name", company.getName());
+		req.setAttribute("company", company.getName());
 		rd.forward(req, resp);  
 	}
 

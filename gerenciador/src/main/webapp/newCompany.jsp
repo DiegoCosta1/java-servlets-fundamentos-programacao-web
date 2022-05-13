@@ -2,6 +2,7 @@
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
 
+<!-- Utilizando apenas JSP -->
 <% 
 	String nomeEmpresa = "Alura";
 	System.out.println(nomeEmpresa);
@@ -15,7 +16,12 @@
 <title>Empresa criada com sucesso</title>
 </head>
 <body>
+
+<!-- Utilizando apenas JSP -->
 <p>A empresa <% out.println(nomeEmpresa); %> foi cadastrada com sucesso.</p>
 <p>A empresa <%= name %> foi cadastrada com sucesso.</p>
+
+<!-- Utilizando EL -->
+<p>A empresa ${company} foi cadastradas com sucesso.</p>
 </body>
 </html>
