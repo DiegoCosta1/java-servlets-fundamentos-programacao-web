@@ -45,6 +45,19 @@
 - Obtemos o `RequestDispatcher` a partir do `HttpServletRequest`
 - Usamos a requisição para colocar ou pegar um atributo (`setAttribute(name, value)` ou `getAttribute(name)`)
 
+#### Java Standard Tag Library e Expression Language (Aula 5):
+- Expression Language (EL) e Java Standard Tag Library (JSTL) foram utilizados como alternativa aos scriptlets
+- EL é uma linguagem simples e limitada para imprimir o resultado de uma expressão, sua sintaxe é `${ ... }`
+- JSTL é utilizada em conjunto ao EL e ela define 5 taglibs (core, fmt, xml, sql e fn)
+- O conjunto de bibliotecas não vem com o Tomcat, sendo necessário importar o arquivo: [jstl-1.2.jar](https://github.com/DiegoCosta1/java-servlets-fundamentos-programacao-web/blob/main/gerenciador/src/main/webapp/WEB-INF/lib/jstl-1.2.jar) para o diretório `WEB-INF/lib`
+- As taglibs mais importantes são: `core`, que serve para controle de fluxo e `fmt`, que serve para formatação e i18n (internacionalização). Os respectivos imports dessas taglibs podem ser feitos através do código:
+```
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+```
+- Foram utilizadas as tags `c:if`, `c:forEach`, `c:url` e `fmt:formatDate`
+-  Para saber mais: [Java e JSTL: Tags para facilitar o desenvolvimento JSP](https://cursos.alura.com.br/course/jstl)
+
 ## Dicas do Eclipse
 - Criação do projeto web pelo menu "File" ou "Project Explorer":
 _`New > Project... > Dynamic Web Project`_
