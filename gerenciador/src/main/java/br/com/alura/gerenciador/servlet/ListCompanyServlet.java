@@ -41,7 +41,7 @@ public class ListCompanyServlet extends HttpServlet {
 //		}
 //		out.println("</ul></body></html>");
 		
-		RequestDispatcher rd= request.getRequestDispatcher("/newCompany.jsp");
+		RequestDispatcher rd= request.getRequestDispatcher("/listCompany.jsp");
 		rd.forward(request, response);
 	}
 
